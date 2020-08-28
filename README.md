@@ -20,7 +20,7 @@ each button can have the same results in JS. Don't need to individualize each bu
 make a list of Small and button
 make a list of Medium and button
 make a list of Large and button
-Again each Size button can have same results.
+Each Size button will need different cost value attached.
 
 -Cost 
 make a third button that adds price of each previous button press for the total cost
@@ -28,6 +28,10 @@ make a third button that adds price of each previous button press for the total 
 -process
 write the JS for first topping and check in consul
 write the html for base set up and 1 topping 
+Create the 1 topping in js 
+Create 1 topping button/format html
+Create total cost button in js then Html
+after you check in consul double check on website to ensure all processes are working so far
 ensure this part works then repeat till the buttons are complete
 write js for total cost
 write html for cost
