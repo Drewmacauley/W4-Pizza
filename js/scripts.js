@@ -10,3 +10,4 @@ let addPizza = (0,0,0);
 addPizza.prototype.topping = function() {
 let topping = 1
 }
+
