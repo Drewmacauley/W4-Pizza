@@ -14,10 +14,15 @@ AddPizza.prototype.AddTopping = function() {
   return this.cost;
 }
 
-AddPizza.prototype.sizePrice = function() {
+AddPizza.prototype.sizePrice = function[small, medium, large]; {
   this.cost += this.size;
-  this.size
+  this.size = [10,12,18]; {
+  }
+  return this.size
 }
+
+//User Interface Logic
+
 
 
 
