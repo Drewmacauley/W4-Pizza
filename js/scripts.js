@@ -1,38 +1,65 @@
-
-//Business Logic for the user Object
+//Business Logic for the user object
+// Plan 1
 function AddPizza (topping, size, cost) {
-this.toppings = []
-this.size = []
-this.cost = []
+  this.topping = topping,
+  this.size = size,
+  this.cost = cost;
 }
 
-// let toppings = new AddPizza (0,0,0);
-// let size = new AddPizza (0,0,0);
-
-AddPizza.prototype.addTopping = function(topping) {
-  topping.id = this.assignId();
-  this.toppings.push(topping);
+AddPizza.prototype.AddTopping = function() {
+  let topping = 1
+  if (topping === 1) {
+    this.cost += 1;
+  } 
+  return this.cost;
 }
 
-AddPizza.prototype.assignId = function() {
-  this.currentId += 1;
-  return this.currentId;
+AddPizza.prototype.sizePrice = function() {
+  this.cost += this.size;
+  this.size
 }
 
-// This button adds the selected topping to the Pizza
-$("#btnAddTopping").click(function() {
-  var myTopping = $("#pizzaToppings").val();
-  myPie.addTopping(myTopping);
-  displayPie();
-  });
 
 
-//User Interface Logic
-$(document).ready(function(){
 
-  $("#totalCostButton").click(function() {
-    let topping = size.cost() 
-    $("#totalCost").show();
 
-  })
-})
+
+
+
+
+
+
+
+
+
+
+// Plan 2
+// // //Business Logic for the user Object
+// // function AddPizza (topping, size, cost) {
+// // this.toppings = []
+// // this.size = []
+// // this.cost = []
+// // }
+
+// // let toppings = new AddPizza (0,0,0);
+// // let size = new AddPizza (0,0,0);
+
+// // AddPizza.prototype.addTopping = function(topping) {
+// //   topping.id = this.size();
+// //   this.toppings.push(topping);
+// // }
+
+// // AddPizza.prototype.cost = function() {
+// //   this.cost += 1;
+// //   return this.cost;
+// // }
+
+
+
+
+
+// // //User Interface Logic
+
+// // let AddPizza = new AddPizza();
+
+// // function 
