@@ -1,38 +1,30 @@
 
 //Business Logic for the user Object
 function AddPizza (topping, size, cost) {
-this.topping = topping,
-this.size = size,
-this.cost = cost;
+this.toppings = []
+this.size = []
+this.cost = []
 }
 
-let toppings = new AddPizza (0,0,0);
-let size = new AddPizza (0,0,0);
+// let toppings = new AddPizza (0,0,0);
+// let size = new AddPizza (0,0,0);
 
-//function AddPizza() {
-  this.toppingsChoices = [];
-  this.sizeChoices = [];
-
-
-AddPizza.prototype.topping = function(cheese, pepperoni, salami, pineapple, Ham, peppers) {
-if (topping === 1) {
-  this.topping += 1
-}
-return topping;
+AddPizza.prototype.addTopping = function(topping) {
+  topping.id = this.assignId();
+  this.toppings.push(topping);
 }
 
-AddPizza.prototype.size = function(small, medium, large) {
-  this.topping += size;
-  if (small === 10) {
-  this.size = cost;
-} else (medium === 15) {
-  this.size = cost;
-} else (large === 20) {
-  this.size = cost;
-}
-return this.cost;
+AddPizza.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
 }
 
+// This button adds the selected topping to the Pizza
+$("#btnAddTopping").click(function() {
+  var myTopping = $("#pizzaToppings").val();
+  myPie.addTopping(myTopping);
+  displayPie();
+  });
 
 
 //User Interface Logic
