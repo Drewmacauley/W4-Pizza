@@ -8,9 +8,9 @@ this.cost = cost;
 let toppings = new AddPizza (0,0,0);
 let size = new AddPizza (0,0,0);
 
-AddPizza.prototype.topping = function(cheese, pep, salami, pineapple, Ham, peppers) {
+AddPizza.prototype.topping = function(cheese, pepperoni, salami, pineapple, Ham, peppers) {
 if (topping === 1) {
-  this.cost += 1
+  this.topping += 1
 }
 }
 
@@ -25,6 +25,8 @@ if (topping === 1) {
 $(document).ready(function(){
 
   $("#totalCost").click(function() {
-    let topping = size.cost() //we have topping = cost????? cost not total cost.....should they be =? should we have cost there?
+    let topping = size.cost() 
+    $("#totalCost").show();
+
   })
 })
