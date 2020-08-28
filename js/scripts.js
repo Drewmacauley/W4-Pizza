@@ -1,3 +1,4 @@
+
 //Business Logic for the user Object
 function AddPizza (topping, size, cost) {
 this.topping = topping,
@@ -7,6 +8,11 @@ this.cost = cost;
 
 let toppings = new AddPizza (0,0,0);
 let size = new AddPizza (0,0,0);
+
+//function AddPizza() {
+  this.toppingsChoices = [];
+  this.sizeChoices = [];
+
 
 AddPizza.prototype.topping = function(cheese, pepperoni, salami, pineapple, Ham, peppers) {
 if (topping === 1) {
@@ -26,7 +32,6 @@ AddPizza.prototype.size = function(small, medium, large) {
 }
 return this.cost;
 }
-
 
 
 
