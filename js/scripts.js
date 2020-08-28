@@ -12,11 +12,20 @@ AddPizza.prototype.topping = function(cheese, pepperoni, salami, pineapple, Ham,
 if (topping === 1) {
   this.topping += 1
 }
+return topping;
 }
 
-
-
-
+AddPizza.prototype.size = function(small, medium, large) {
+  this.topping += size;
+  if (small === 10) {
+  this.size = cost;
+} else (medium === 15) {
+  this.size = cost;
+} else (large === 20) {
+  this.size = cost;
+}
+return this.cost;
+}
 
 
 
@@ -24,7 +33,7 @@ if (topping === 1) {
 //User Interface Logic
 $(document).ready(function(){
 
-  $("#totalCost").click(function() {
+  $("#totalCostButton").click(function() {
     let topping = size.cost() 
     $("#totalCost").show();
 
