@@ -1,5 +1,5 @@
 <!-- Pizza Time!
-CHOOSE TOPPINGS (cheese, pep, salami, pineapple, Ham)
+CHOOSE TOPPINGS (cheese, pep, salami, pineapple, Ham, peppers)
 SIZE (sm, med, large) 
 COST( size + toppings )
 
@@ -13,6 +13,7 @@ make a list of the Pepperoni and button
 make a list of the Salami and button 
 make a list of the Pineapple and button 
 make a list of the Ham and button 
+make a list of the peppers and button 
 each button can have the same results in JS. Don't need to individualize each button or code.  
 
 -Size
